@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SchoolManagement.API</name>
+    </assembly>
+    <members>
+        <member name="T:SchoolManagement.API.Controllers.AuthController">
+            <summary>
+            Handles User Authentication and JWT Token Generation using Asynchronous Programming.
+            Demonstrates async/await for secure and efficient authentication processing.
+            </summary>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.AuthController.Login(SchoolManagement.Model.DTOs.LoginDto)">
+            <summary>
+            Asynchronously authenticates a user and generates a JWT token.
+            Demonstrates async/await for secure and non-blocking authentication operations.
+            </summary>
+            <param name="loginDto">User login credentials.</param>
+            <returns>JWT token and authentication response.</returns>
+        </member>
+        <member name="T:SchoolManagement.API.Controllers.StudentController">
+            <summary>
+            Handles Student CRUD Operations, Pagination, Filtering and Asynchronous Database Processing.
+            Demonstrates the use of async/await for non-blocking API operations.
+            </summary>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.StudentController.GetAll(System.Int32,System.Int32,System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Asynchronously retrieves all students with pagination and filtering.
+            Demonstrates async/await for efficient and non-blocking database access.
+            </summary>
+            <param name="pageNumber">Page number.</param>
+            <param name="pageSize">Number of records per page.</param>
+            <param name="studentName">Filter by student name.</param>
+            <param name="gender">Filter by gender.</param>
+            <param name="classId">Filter by class.</param>
+            <returns>Paginated list of students.</returns>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.StudentController.GetByGuid(System.Guid)">
+            <summary>
+            Asynchronously retrieves student details by Guid.
+            Uses async/await to perform non-blocking data retrieval operations.
+            </summary>
+            <param name="studentGuid">Student Guid.</param>
+            <returns>Student details.</returns>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.StudentController.Create(SchoolManagement.Model.DTOs.StudentCreateDto)">
+            <summary>
+            Asynchronously creates a new student record.
+            Demonstrates asynchronous database insertion using async/await.
+            </summary>
+            <param name="dto">Student information.</param>
+            <returns>Created student.</returns>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.StudentController.Update(SchoolManagement.Model.DTOs.StudentUpdateDto)">
+            <summary>
+            Asynchronously updates existing student details.
+            Uses async programming to execute non-blocking update operations.
+            </summary>
+            <param name="dto">Updated student information.</param>
+            <returns>Update status.</returns>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.StudentController.Delete(System.Guid)">
+            <summary>
+            Asynchronously deletes a student by Guid.
+            Demonstrates asynchronous database deletion using async/await.
+            </summary>
+            <param name="studentGuid">Student Guid.</param>
+            <returns>Delete status.</returns>
+        </member>
+        <member name="T:SchoolManagement.API.Controllers.TeacherController">
+            <summary>
+            Handles Teacher CRUD Operations using Asynchronous Programming.
+            Accessible only by Admin and Teacher roles.
+            Demonstrates async/await for efficient and non-blocking database operations.
+            </summary>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.TeacherController.GetAll">
+            <summary>
+            Asynchronously retrieves all teachers.
+            Uses async/await for efficient and non-blocking database access.
+            </summary>
+            <returns>List of teachers.</returns>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.TeacherController.GetByGuid(System.Guid)">
+            <summary>
+            Asynchronously retrieves teacher details by Guid.
+            Demonstrates async data retrieval operations.
+            </summary>
+            <param name="teacherGuid">Teacher Guid.</param>
+            <returns>Teacher details.</returns>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.TeacherController.Create(SchoolManagement.Model.DTOs.TeacherCreateDto)">
+            <summary>
+            Asynchronously creates a new teacher record.
+            Demonstrates asynchronous database insertion using async/await.
+            </summary>
+            <param name="dto">Teacher information.</param>
+            <returns>Created teacher.</returns>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.TeacherController.Update(SchoolManagement.Model.DTOs.TeacherUpdateDto)">
+            <summary>
+            Asynchronously updates existing teacher details.
+            Uses async programming for non-blocking update operations.
+            </summary>
+            <param name="dto">Updated teacher information.</param>
+            <returns>Updated teacher.</returns>
+        </member>
+        <member name="M:SchoolManagement.API.Controllers.TeacherController.Delete(System.Guid)">
+            <summary>
+            Asynchronously deletes a teacher by Guid.
+            Demonstrates asynchronous database deletion using async/await.
+            </summary>
+            <param name="teacherGuid">Teacher Guid.</param>
+            <returns>Delete status.</returns>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>
